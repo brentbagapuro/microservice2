@@ -31,7 +31,7 @@ const Navbar = ({
   }
 
   return (
-    <div className="w-full bg-blue-500">
+    <div className="w-full bg-primary">
       <div className="max-w-[1280px] m-auto p-4 flex justify-between items-center">
         <div className="cursor-pointer">
           <h2 className="text-white font-bold text-2xl">Microservice2</h2>
