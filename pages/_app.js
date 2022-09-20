@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Layout from '@/components/Layout'
 import { SessionProvider } from 'next-auth/react'
 import 'styles/globals.css'
 
@@ -13,7 +14,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <SessionProvider session={session} refetchInterval={5 * 60}>
-        <Component {...pageProps} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
       </SessionProvider>
     </>
   )

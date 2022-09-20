@@ -1,13 +1,7 @@
-import { useSession, signIn, signOut } from 'next-auth/react'
+import Container from '@/components/Container'
 
-const Home = () => {
-  const { data } = useSession()
-  console.log(data)
-  return (
-    <div>
-      <button onClick={() => signIn()}>Sign In</button>
-    </div>
-  )
+const Homepage = () => {
+  return <Container>Homepage</Container>
 }
 
-export default Home
+export default Homepage
